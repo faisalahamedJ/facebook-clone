@@ -1,0 +1,100 @@
+:root{
+    --primary : #242526;
+    --fontColor: #D0D2D6;
+    --hoverColor : rgb(0, 119, 255);
+    --contentbg : #18191A;
+}
+
+
+
+.headerBar{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+    position: fixed;
+    color: var(--fontColor);
+    z-index: 1;
+}
+
+.logBar{
+    width: 20vw;
+}
+
+
+
+.navBar{
+    width: 50vw;
+}
+
+.flexRow{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navBar>ul>li{
+    justify-content: space-between;
+}
+.navBar>ul>li{
+    display: inline-block;
+    width: 10vw;
+    padding-bottom: .8rem;
+}
+
+.navBar>ul>li:not(:last-child):hover{
+    color: var(--hoverColor);
+    border-bottom: .2rem solid var(--hoverColor);
+}
+
+.flexRow>li:hover{
+    color: var(--hoverColor);
+}
+
+.sideBar{
+    width: 30vw;
+}
+
+.space{
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width : 480px){
+    .headerBar{
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+    .navBar{
+        width: 10vw;
+    }
+    .sideBar{
+        width: 70vw;
+    }
+    .navBar > .flexRow{
+        flex-direction: column-reverse;
+        padding: 0;
+        left: 0;
+
+    }
+    .navBar>.flexRow>li:not(:last-child){
+        visibility: hidden;
+        background-color: var(--primary);
+        width: 100%;
+        padding-top: 1rem;
+        
+    }
+    .space{
+        padding: 0;
+        justify-content: space-around;
+    }
+}

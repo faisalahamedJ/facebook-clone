@@ -1,0 +1,527 @@
+:root{
+    --primary : #242526;
+    --fontColor: #D0D2D6;
+    --hoverColor : rgb(0, 119, 255);
+    --contentbg : #18191A;
+}
+
+.homeContainer{
+    background:  var(--contentbg);
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    margin: 3rem auto;
+    gap: 1rem;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.userViewContainer{
+    width: 75%;
+}
+
+.userViewStretch{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.individualBox{
+    width: 100%;
+    background: var(--primary);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem ;
+    margin-top: 1.5rem;
+}
+
+.userThoughtBox{
+    color: var(--fontColor);
+}
+
+.userTypingBox{
+    width: 95%;
+    margin: 0 auto;
+    flex: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userTypingBox >img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateY(20%);
+}
+
+.userTypingBox >input{
+    width: 80%;
+    margin: 0 1rem;
+    padding: .5rem;
+    background: rgba(136, 136, 136, 0.4);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: var(--fontColor);
+    transform: translateY(-30%);
+}
+
+.userUploadButton{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+.userUploadButton > li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    
+}
+
+.userUploadButton >li:hover{
+    border-radius: 10px;
+    background: rgba(136, 136, 136, 0.4);
+}
+
+.videoIcon{
+    color: rgb(173, 0, 0);
+   
+}
+
+.pictureIcon{
+    color: rgb(0, 243, 61);
+}
+
+.smileIcon{
+    color: rgb(255, 196, 0);
+}
+
+
+
+
+.postHiddenContainer{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.postHiddenContainer > .closeIcon{
+    width: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.postHiddenContainer > .postHidden{
+    width: 85%;
+}
+.postHiddenContainer > .postHidden >h3{
+    margin: 0;
+}
+.postHiddenContainer > .postHidden > p{
+    margin: 0;
+}
+.postHiddenContainer >div{
+    margin: auto;
+}
+.postHiddenContainer > div> .undoBtn{
+    border: none;
+    background-color: var(--contentbg);
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.postHiddenContainer > div>.undoBtn:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.postContainer{
+    height: auto;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+
+.userAbout{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.userAbout >.more{
+    right: 1rem;
+    position: absolute;
+    letter-spacing: .3rem;
+    font-weight: 600;
+}
+
+.userProfileName{
+    padding-left: 1rem;
+}
+
+.userProfile > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userCaption{
+    padding: 1rem 0;
+}
+
+.userImg{
+    width: 100%;
+    height: 70%;
+    background: #000;
+    left: 0;
+    
+}
+
+.userImg > img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0 4rem;
+}
+
+
+.allComments{
+    padding: 1rem 2rem;
+    text-align: right;
+    display: block;
+}
+
+.toggleComments{
+    padding: 1rem 2rem .5rem;
+    text-align: right;
+    cursor: pointer;
+}
+.toggleComments:hover{
+    text-decoration: underline;
+}
+
+input[type = submit]{
+    padding:.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background: #295f95;
+    color: #fff;
+
+}
+
+
+
+
+
+.commentContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    justify-content: space-evenly;
+ 
+}
+
+.likeBtn{    
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.commentBox{
+    padding: .5rem;
+    border: none;
+    border-radius: 20px;
+}
+.commentBoxContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+hr{
+    border: 1px solid rgba(136, 136, 136, 0.4)
+}
+
+
+.nmContainer{
+    width: 25%;
+    padding: 1.5rem;
+
+}
+
+
+
+.onlineContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactIcon{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-right: .5rem;
+}
+
+.onlineContacts{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    justify-content: space-between;
+    
+}
+
+.onlineContacts> div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+
+}
+.onlineContacts>div>div > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.contactName{
+    width: 75%;
+    margin: auto 1rem;
+    text-align: left;
+}
+
+
+.activePerson::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(0, 243, 61);
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    border: 2px solid var(--primary);
+    transform: translate(-110%,300%);
+}
+.inActivePerson::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(90, 90, 90);
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    border: 2px solid var(--primary);
+    transform: translate(-110%,300%);
+}
+
+
+@media screen and (max-width : 480px){
+    .homeContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .userViewContainer{
+        width: 100%;
+    }
+
+    .userTypingBox{
+        padding: 1rem 0 0;
+    }
+    .userTypingBox > input{
+        width: 60%;
+    }
+
+    .userUploadButton{
+        padding: 0 .5rem 1rem;
+        justify-content: space-between;
+        font-size: .9rem;
+    }
+
+    .feelingactivity{
+        display: none;
+    }
+    .nmContainer{
+        display: none;
+    }
+
+    .individualBox{
+        padding: 0;
+    }
+    .postHiddenContainer{
+        padding: 1rem .1rem;
+    }
+    .postHiddenContainer > .closeIcon{
+        width: 17%;
+        margin: 0;
+    }
+    .postHidden{
+        width: 50%;
+    }
+
+    .postContainer{
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    .userAbout{
+        padding: 0 .5rem;
+    }
+
+    .userCaption{
+        padding: 1rem 1rem;
+    }
+
+    .userImg{
+        height: 50%;
+    }
+
+    .userImg > img{
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+.statusContainer{
+    width: 100%;
+    height: 300px;
+    margin: 1rem auto 2rem;
+    position: relative;
+    padding: 20px;
+
+}
+
+.carouselTrackContainer{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.carouselTrack{
+    width: 100%;
+    height: 275px;
+    list-style: none;
+    position: relative;
+    
+}
+
+.carouselItem{
+    width: 180px;
+    height: 100%;
+    position: absolute;  
+    padding: 1.5rem .3rem;
+    
+}
+
+.carouselContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 25px;
+    background-position: center;
+}
+
+.carouselContent>div >img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #295f95;
+}
+
+
+
+.buttonContainer{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.buttonLeft{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.buttonLeft:hover, .buttonRight:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.buttonRight{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+
+.postPopUp{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 15px #000;
+    backdrop-filter: blur(5px);
+    display: none;
+    
+}
+
+.popUpContainer{
+    position: relative;
+
+}
+
+.CloseCircleOutlined{
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    font-size: 2rem;
+    color: rgba(199, 199, 199, 0.7);
+}
+.CloseCircleOutlined:hover{
+    color: #fff;
+}
+
+.commentContainer{
+    padding: .5rem 0;
+}
+
+.commentBox{
+    padding: 0 ;
+}
+
+.commentBoxContainer{
+    gap: .5rem;
+}
+
+
+
+
+
